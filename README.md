@@ -15,13 +15,13 @@
 
 ```lua
 return {
-    "",
-    config = function()
-      require("kikuBruce/zellij-runner.nvim").setup {
-        commands = {
-          python = "zellij run --cwd ${cwd} -c -- python3 ${file}",
-        },
-      }
-    end,
+  "kikuBruce/zellij-runner.nvim",
+  config = function()
+    require("zellij-runner").setup {
+      commands = {
+        python = "zellij run --cwd ${cwd} -c -- python3 ${file}",
+      },
+    }
+  end,
 }
 ```
