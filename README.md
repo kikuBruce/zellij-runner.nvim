@@ -15,9 +15,9 @@
 
 ```lua
 return {
-    "zellij-runner",
+    "",
     config = function()
-      require("zellij-runner").setup {
+      require("kikuBruce/zellij-runner.nvim").setup {
         commands = {
           python = "zellij run --cwd ${cwd} -c -- python3 ${file}",
         },
