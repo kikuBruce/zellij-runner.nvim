@@ -6,6 +6,7 @@ M.defaults = {
   commands = {
     python = 'zellij run --cwd ${cwd} -- python3 ${file}',
     javascript = 'zellij run --cwd ${cwd} -c -- npm run dev',
+    typescript = 'zellij run --cwd ${cwd} -c -- npm run dev',
     typescriptreact = "zellij run --cwd ${cwd} -c -- npm run dev",
     lua = 'zellij run --cwd ${cwd} -- lua ${file}',
     rust = function(root, _)
